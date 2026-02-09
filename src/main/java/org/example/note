@@ -1,0 +1,21 @@
+    Big O Notation - 0(n)
+-An algorithm is a precise set of step-by-step instructions designed to solve a specific problem or accomplish a particular task.
+-Big O notation is a mathematical notation that describes the limiting behaviour
+of a function when the argument tends towards a particular value or infinity.
+-We use big o to describe the performance of an algorithm.
+This helps us determine if an algorithm is scalable or not.
+That is, is this algorithm going to scale well if the input grows really large.
+Example 1 -  Big o of 1 - O(1)
+printing the first element in an array
+No matter the number of elements in an array(size of our input), to print the first item in an array, the time to execute the method is always constant
+The run time complexity of printing the first element in an array is Big O of one, meaning it runs at constant time.
+When talking about run time complexity, we just want to know how much of our algorithm slows down as the input grows.
+
+Example 2 - Big O of n - O(n)
+Looping through an array anf printing the elements of the array
+-if we have a single item in an array, we will have one print operation
+-if we have a million items, we will have a million print operations
+Therefore the time complexity of this operation is denoted with the Big o of n - O(n)
+Meaning the cost of this operation(time) increases linearly with the size of the input.
+
+Example 3 - Big O of n square - O(n * n)
