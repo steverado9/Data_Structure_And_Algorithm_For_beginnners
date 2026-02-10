@@ -1,3 +1,4 @@
+Data Structures and Algorithms
     Big O Notation - 0(n)
 -An algorithm is a precise set of step-by-step instructions designed to solve a specific problem or accomplish a particular task.
 -Big O notation is a mathematical notation that describes the limiting behaviour
@@ -5,17 +6,50 @@ of a function when the argument tends towards a particular value or infinity.
 -We use big o to describe the performance of an algorithm.
 This helps us determine if an algorithm is scalable or not.
 That is, is this algorithm going to scale well if the input grows really large.
+    Constant growth
 Example 1 -  Big o of 1 - O(1)
 printing the first element in an array
 No matter the number of elements in an array(size of our input), to print the first item in an array, the time to execute the method is always constant
 The run time complexity of printing the first element in an array is Big O of one, meaning it runs at constant time.
 When talking about run time complexity, we just want to know how much of our algorithm slows down as the input grows.
 
+    Linear growth
 Example 2 - Big O of n - O(n)
-Looping through an array anf printing the elements of the array
+Looping through an array and printing the elements of the array
 -if we have a single item in an array, we will have one print operation
 -if we have a million items, we will have a million print operations
 Therefore the time complexity of this operation is denoted with the Big o of n - O(n)
 Meaning the cost of this operation(time) increases linearly with the size of the input.
 
-Example 3 - Big O of n square - O(n * n)
+    Quadratic growth
+Example 3 - Big O of n square - O(n ^ 2)
+Nested loops
+This is used to print all combinations of items in an array.
+algorithms that run in O(n^2) runs slower as the input increases.
+The run time complexity of this method is O(n2).
+The first 3 examples have linear growth
+
+    Logarithmic growth
+The logarithmic curve slows down at some point while the linear curve grows at the same rate.
+Meaning an algorithm that runs in logarithmic time is more efficient and scalable than an algorithm that runs in linear time.
+Example 4 - Big O(log n) - Big O of log n
+
+    Exponential growth
+Big O(2^n) - Big O of 2 raise to power n
+This is the opposite of the Logarithmic growth.
+The curse grows faster and faster with increase input.
+This is not scalable.
+
+In an ideal word we want our algorithm to be super fast and take up small memory
+but unfortunately it hardly ever happens.
+Most of the time, we have to do a trade off between saving time and saving space.
+    How much space an algorithm require(space complexity)
+When we talk about space complexity, we only look at the additional space we should allocate relative to the size of the input.
+
+    Data Structures
+1)Arrays
+This is used to store a list of items.
+This items get stored sequentially in memory.
+    Limitations of arrays
+-arrays are static
+
