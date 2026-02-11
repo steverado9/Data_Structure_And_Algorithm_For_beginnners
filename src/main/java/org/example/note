@@ -51,5 +51,17 @@ When we talk about space complexity, we only look at the additional space we sho
 This is used to store a list of items.
 This items get stored sequentially in memory.
     Limitations of arrays
--arrays are static
+-arrays are static, meaning the size of an array cannot change.
+so we have to know the size before hand to put elements in the array
+if we guess, and the array size is bigger than the number of elements, then we waste memory
+the run time complexity of adding elements in an array is O(n)
+meaning the cost of copying into the array increases proportionally to the size of the array.
+The time complexity for deleting the last element in the array is also O(n)
+cos you have to go through all the elements and start changing their positions till you get to the last.
+-To see the content of an array, use the Array class
+-Arrays in java are static, meaning the size cannot be changed
+Exercise- Building an array
+
+
+
 
