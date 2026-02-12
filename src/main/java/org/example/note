@@ -37,7 +37,7 @@ Example 4 - Big O(log n) - Big O of log n
     Exponential growth
 Big O(2^n) - Big O of 2 raise to power n
 This is the opposite of the Logarithmic growth.
-The curse grows faster and faster with increase input.
+The curve grows faster and faster with increase input.
 This is not scalable.
 
 In an ideal word we want our algorithm to be super fast and take up small memory
@@ -58,6 +58,7 @@ the run time complexity of adding elements in an array is O(n)
 meaning the cost of copying into the array increases proportionally to the size of the array.
 The time complexity for deleting the last element in the array is also O(n)
 cos you have to go through all the elements and start changing their positions till you get to the last.
+    Array class
 -To see the content of an array, use the Array class
 -Arrays in java are static, meaning the size cannot be changed
 Exercise- Building an array
