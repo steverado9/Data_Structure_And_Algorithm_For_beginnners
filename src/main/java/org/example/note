@@ -61,7 +61,50 @@ cos you have to go through all the elements and start changing their positions t
     Array class
 -To see the content of an array, use the Array class
 -Arrays in java are static, meaning the size cannot be changed
-Exercise- Building an array
+Exercise- Build a dynamic array
+
+    Dynamic Array
+Java has two implementations of dynamic arrays.
+1)Vector: This class grows by 100% of its size when it get full.
+All the methods of vector class are synchronized
+2)ArrayList: This class grows by 50% of its size when it get full.
+The methods in the ArrayList are not synchronized.
+Both this classes are declared in the java.utils package.
+-Synchronized: Only a single thread can access this method.
+    How to declare an arrayList
+ArrayList<wrapperType> arrayName = new ArrayList<>();
+wrapperType - Integer, Byte, Boolean etc
+    LinkedList
+This is used to store a list of object in sequence.
+Unlike arrays, a linklist can grow and shrink automatically
+A linklist consist of a group of nodes in sequence.
+    each nodes holds two pieces of values
+-a value
+-The address of the next node in the list
+That is each nodes points to or references the next node.
+That is why it is called a linkedlist cos all the nodes are linked together.
+The first node is called the HEAD, and the last node the TAIL.
+    Time complexity of linkedlist operations
+When Thinking of the Time complexity, we consider the worse case scenario.
+1)Looking up by value: O(n)
+cos the worse case is if the value is at the end of the list, so we have to go through all the elements in the list.
+2)Looking up by index: O(n)
+Transverse the list till you find the element at the end.
+3)Insertion at the end: O(1)
+create a new node and have the last node(Tail) point to it.
+4)Insertion at the Beginning: O(1)
+create a new node and have the first node(Head) point to it.
+Unlike arrays, we don't have to shift the elements, we just have to update the references.
+5)Insertion at the Middle: O(n)
+We first find the node in the middle and update the links
+6)Deletion
+From the Beginning O(1) operation
+set the head to point to the second node
+-from the end O(n) operation
+transverse the list to the node before the last node and link it with the tail
+-from the middle O(n) operation
+    Build a linkedlist
+
 
 
 
