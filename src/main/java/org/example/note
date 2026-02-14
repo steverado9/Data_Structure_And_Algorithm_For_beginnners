@@ -1,8 +1,6 @@
 Data Structures and Algorithms
     Big O Notation - 0(n)
 -An algorithm is a precise set of step-by-step instructions designed to solve a specific problem or accomplish a particular task.
--Big O notation is a mathematical notation that describes the limiting behaviour
-of a function when the argument tends towards a particular value or infinity.
 -We use big o to describe the performance of an algorithm.
 This helps us determine if an algorithm is scalable or not.
 That is, is this algorithm going to scale well if the input grows really large.
